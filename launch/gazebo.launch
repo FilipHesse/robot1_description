@@ -11,7 +11,7 @@
 
   <!-- Load the URDF into the ROS Parameter Server -->
   <param name="robot_description" 
-	 command="$(find xacro)/xacro.py --inorder $(arg model)" />
+	 command="$(find xacro)/xacro --inorder $(arg model)" />
 	
   <!-- Start Rviz -->  
   <param name="use_gui" value="False"/>
